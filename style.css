@@ -1,0 +1,35 @@
+ul{
+    list-style-type: none;
+}
+
+li::selection {
+    color:brown;
+    background-color: antiquewhite;
+    line-height: 1;
+}
+
+li::marker {
+    color: cornflowerblue;
+    content: '<> ';
+    font-size: 1.1em;
+}
+
+#tips::before {
+    background-color: bisque;
+    content: "That's Added before";
+    font-weight: bold;
+}
+
+#tips::after {
+    background-color: aqua;
+    font-weight: bold;
+    content: "That's added in after";
+}
+p.first::first-letter{
+    font-size: 23px;
+    font-weight: bold;
+}
+p.first-line::first-line{
+    color: green;
+    font-weight: bold;
+}
